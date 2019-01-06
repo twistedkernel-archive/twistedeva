@@ -891,7 +891,7 @@ static inline int is_blk_queue_support_crypto(struct request_queue *q)
 #define QUEUE_FLAG_FUA        24       /* device supports FUA writes */
 #define QUEUE_FLAG_FLUSH_NQ    25      /* flush not queueuable */
 
-#define QUEUE_FLAG_DEFAULT	((1 << QUEUE_FLAG_IO_STAT) |		\
+#define QUEUE_FLAG_DEFAULT	((0 << QUEUE_FLAG_IO_STAT) |		\
 				 (1 << QUEUE_FLAG_STACKABLE)	|	\
 				 (1 << QUEUE_FLAG_SAME_COMP)	|	\
 				 (1 << QUEUE_FLAG_ADD_RANDOM))
